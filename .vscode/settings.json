@@ -1,0 +1,16 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "c-cpp-flylint.clang.defines": [
+    
+    ],
+    "c-cpp-flylint.flexelint.executable": "lint",
+    "c-cpp-flylint.clang.enable": true,
+    "c-cpp-flylint.cppcheck.enable": false,
+    "files.autoSave": "afterDelay",
+    "cmake.buildTask": true,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "c-cpp-flylint.cppcheck.executable": "cppcheck",
+    "files.associations": {
+        "arrays.h": "c"
+    },
+}
