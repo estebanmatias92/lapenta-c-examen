@@ -54,7 +54,11 @@ void app_v1(int *list, unsigned int length)
         scanf("%d", &option);
 
         // Clean the console after choosing the exercise
-        system("clear");
+        #ifdef _WIN32
+            system("cls");
+        #else
+            system("clear");
+        #endif
 
         // Redundant, but necessary to print the title right here, and not write it to each exercise file
         if (array_search_int(list, length, option) == -1)
@@ -88,7 +92,11 @@ void app_v2(char **list, unsigned int length)
         scanf("%s", option);
 
         // Clean the console after choosing the exercise
-        system("clear");
+        #ifdef _WIN32
+            system("cls");
+        #else
+            system("clear");
+        #endif
 
         // Redundant, but necessary to print the title right here, and not write it to each exercise file
         if (array_search_string(list, length, option) == -1)

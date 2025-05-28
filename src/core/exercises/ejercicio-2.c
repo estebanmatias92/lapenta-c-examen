@@ -27,5 +27,7 @@ void ejercicio_2()
     {
         printf("La potencia es incorrecta");
     }
+
+    system("pause");
     
 }

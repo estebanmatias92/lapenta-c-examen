@@ -94,8 +94,6 @@ double get_total_salary(Position position)
 */
 void show_salary_table_options(Position *positions, size_t size)
 {
-	system("clear");
-
 	for (size_t i = 0; i < size; i++)
 	{		
 		printf("\n(%i) %s", i + 1, positions[i].name);
@@ -129,7 +127,7 @@ void ejercicio_1()
 	//printf("-------------------------------------------------------------------------------------\n");
 	printf("Valor de hora extra\n");
 	printf("-------------------------------------------------------------------------------------\n");
-	printf("$750 \t| $900 \t| $1200 \t| $1450 \t| $1500\n");
+	printf("$750      | $900          | $1200          | $1450 \t| $1500\n");
 	printf("=====================================================================================\n");
 	//printf("-------------------------------------------------------------------------------------\n");
 	printf("Bonificaciones\n");
@@ -141,20 +139,7 @@ void ejercicio_1()
 	printf("-------------------------------------------------------------------------------------\n");
 	printf("%2 \t| %5 \t| %9 \t| %12 \t| %15\n");
 	printf("=====================================================================================\n");
-	//printf("-------------------------------------------------------------------------------------\n");
-	
-	char *left_align_format = "| %-15s | %-4d |\n";
 
-	printf("+-----------------+------+\n"
-		   "| Column name     | ID   |\n"
-		   "+-----------------+------+\n");
-	for (int i = 0; i < 5; i++) 
-	{
-		char parsed_data[30];
-		sprintf(parsed_data, "some data %d", i);
-		printf(left_align_format, parsed_data, i * i);
-	}
-	printf("+-----------------+------+\n");
 
 	// Constant
 	int overtime_hours = 5;
@@ -234,6 +219,6 @@ void ejercicio_1()
 	// While the user keep entering the correct choices, the loop continues
 	while (position_code <= 3 && position_code > 0);
 
-	system("clear");
+	system("pause");
 
 }
