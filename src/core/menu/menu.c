@@ -53,30 +53,6 @@ void launch_exercise_int(int option)
     case 2:
         ejercicio_2();
         break;
-    case 3:
-        ejercicio_3();
-        break;
-    case 4:
-        ejercicio_4();
-        break;
-    case 5:
-        ejercicio_5();
-        break;
-    case 6:
-        ejercicio_6();
-        break;
-    case 7:
-        ejercicio_7();
-        break;
-    case 8:
-        ejercicio_8();
-        break;
-    case 9:
-        ejercicio_9();
-        break;
-    case 10:
-        ejercicio_10();
-        break;
     default:
         break;
     }    
@@ -99,39 +75,7 @@ void launch_exercise_string(char *option)
     else if (strcmp(option, "02") == 0)
     {
         ejercicio_2();
-    } 
-    else if (strcmp(option, "03") == 0)
-    {
-        ejercicio_3();
-    } 
-    else if (strcmp(option, "04") == 0)
-    {
-        ejercicio_4();
-    } 
-    else if (strcmp(option, "05") == 0)
-    {
-        ejercicio_5();
-    } 
-    else if (strcmp(option, "06") == 0)
-    {
-        ejercicio_6();
-    } 
-    else if (strcmp(option, "07") == 0)
-    {
-        ejercicio_7();
-    } 
-    else if (strcmp(option, "08") == 0)
-    {
-        ejercicio_8();
-    } 
-    else if (strcmp(option, "09") == 0)
-    {
-        ejercicio_9();
-    } 
-    else if (strcmp(option, "10") == 0)
-    {
-        ejercicio_10();
-    }  
+    }
 }
 
 /*
@@ -139,7 +83,7 @@ void launch_exercise_string(char *option)
 */
 void print_menu_title(void)
 {
-    printf("\n\n\n"); 
+    printf("\n\n"); 
     printf("\n============");
     printf("\n    MENU    ");
     printf("\n============\n");
